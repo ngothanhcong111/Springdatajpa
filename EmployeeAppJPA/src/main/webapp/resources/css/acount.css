@@ -1,0 +1,12 @@
+@charset "UTF-8";
+.form-acount , th ,td{
+	border: 1px solid silver;
+	border-collapse: collapse;
+	
+}
+.form-acount{
+	width: 100%;
+	height: 100%;
+}
+
+

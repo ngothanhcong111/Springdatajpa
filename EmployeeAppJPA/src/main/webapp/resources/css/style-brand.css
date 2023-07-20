@@ -1,0 +1,512 @@
+/* reset css*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    /* hanh dong cuon */
+    scroll-behavior: smooth;
+}
+/*
+    1.Tu ngoai vao trong
+    2.Tu tren xuong duoi
+    3.Tong quan den chi tiet
+*/
+
+
+/*
+1.vi tri
+2.kich thuoc(width. heigth)
+3.mau sac
+4.kieu dang(kieu chu,hinh tron, hinh vuong)
+*/
+/* #main{
+
+} */
+/* giai quyet  van de cua float khong om vao cac item */
+.clear{
+    clear: both;
+}
+
+.text-white{
+    /* important:do uu tien cao */
+    color: #fff !important;
+}
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;   
+    height: 46.5px;
+    background-color: #000;
+    /* Thiet lap tu tu chong len nhau cua cac element...Quy din boi gia tri bang so(1,2,3...).Gia tri bat dau tu con so 0. Gia tri cang cao se nam ben tren,gia tri thap ti nam ben duoi */
+    z-index: 1;
+}
+#nav{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+#nav > li{
+    display:inline-block ;
+}
+
+#nav .subnav{
+    display: none;
+    /* vi tri la con */
+    position: absolute;
+    top:100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0,0, 0.3);
+    min-width: 160px;
+}
+#nav .subnav a{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38.5px;
+}
+
+#nav  li:hover .subnav{
+    display: block;
+}
+#nav > li > a{
+    color: #fff;
+    /* viet hoa */
+    text-transform: uppercase;
+}
+#nav, .subnav{
+    /* Xoa dau cua list */
+    list-style-type: none;
+    
+}
+
+#nav li a{
+    /* Xoa dau gach chan */
+    text-decoration:none;
+    line-height: 46.5px;
+    padding: 0 24px;
+    display: inline-block;
+}
+#nav .subnav li > a{
+    display: block;
+}
+/* , cung dat thuoc tinh cho 2 the cungg tinh chat */
+#nav .subnav li:hover a, 
+#nav > li:hover > a{
+    color: #000;
+    background-color: #ccc;
+    
+}
+#nav {
+    display: inline-block;
+}
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+#header .search-btn{
+    /* co dinh phan tu ve phia ben phai */
+    float:right;
+    padding: 0 21px;
+    
+}
+#header .search-btn:hover {
+    background-color: #f44336;
+    /* cursor : doi ccon tro chuot thanh ngon tay */
+    cursor: pointer;
+}
+
+#header .search-icon{
+    color:#fff;
+    font-size: 20px;
+    /* Chinh do cao cua dong */
+    line-height: 46.5px;
+}
+
+#slider{
+    position: relative;
+    margin-top: 46.5px;
+    padding-top: 50%;
+ /*  can giua top  cover : ??? no repeat: khong lap lai */
+    /*background: url('/resources/img/TheBrand/slider1/chicago.jpg') top center / cover no-repeat;*/
+}
+
+
+#slider .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #ccc;
+    /* can giua cach 1 */
+    left: 50%;
+    /*  thut lui  hay tang len: chinh vi tri cua cac element */
+    transform: translateX(-50%);
+    text-align: center;
+    /* can giua cach 2 : width: 100%
+
+        cach 3: left: 0; right= 0;  
+    */
+}
+#slider .text-heading{
+    /*  Do dam nhat cua chu */
+    font-weight: 500;
+    font-size: 24px;
+    
+}
+#slider .text-description{
+    font-size: 15px;
+    margin-top: 25px;
+    line-height: 1.5;
+    font-weight: 800;
+}
+#content .content-section{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+}
+
+#content .section-heading{
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+    /* Dieu chinh khhang cach cua cac chu va noi dung */
+    letter-spacing: 4px;
+
+}
+
+#content .section-sub-heading{
+    margin-top:25px;
+    text-align: center;
+    font-size: 15px;
+    /* kieu chu nghieng */
+    font-style: italic;
+    /* Giam hoac tang do dam nhat cho cu va noi dung */
+    opacity: 0.6;
+}
+
+#content .about-text{
+    margin-top: 25px;
+    /* can dieu 2 ben  */
+    text-align: justify;
+    /* line-higt:1.4 for tieng anh.... vaf 1.6 cho tieng viet */
+    line-height: 1.4;
+}
+
+#content .members-list{
+    margin-top: 48px;
+    /* Khac phuc van de cua float....Khi 3 member-item su dung float thi members-list bi co lai....Khong om duwoc ac thang con */
+    /* overflow: hidden;--------------------------- */
+}
+#content .member-item{
+    float: left;
+    width: 33.3333333%;
+    text-align: center;
+}
+
+#content .member-name{
+    font-size: 15px;
+    
+}
+
+#content .member-img{
+    width: 154px;
+    margin-top: 15px;
+    border-radius: 4px;
+    padding-bottom: 64px;
+}
+.tour-section{
+    background-color: #000;
+}
+
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style-type:none;
+}
+.tickets-list li{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #757575;
+    border-bottom: 1px solid #ddd;
+    padding: 11px 16px;
+    width: 100%;
+}
+.tickets-list .sold-out{
+    color: #fff;
+    background-color: #f44336;
+    margin-left: 16px;
+    padding: 3px 4px;
+    text-align: center;
+}
+.tickets-list .quantity{
+    float: right;
+    background-color: #000;
+    /* padding-left: 8px;
+    padding-right: 8px; */
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
+    border-radius: 50%;
+    color: #fff;
+}
+/* place */
+.places-list{
+    margin: 32px -8px 0;
+    padding-bottom: 48px;
+}
+.place-item{
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+}
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+.place-time{
+    margin-top:15px;
+    opacity: 0.6;
+}
+   
+.place-desc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-buy-btn{
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.place-img{
+    width: 100%;
+    display: block;
+
+}
+.place-img:hover{
+    opacity: 0.6;
+}
+.place-buy-btn:hover{
+    color:#000;
+    background-color: #ccc;
+}
+
+.modal{
+    /*  */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0,0, 0.4);
+    /*  3 then nay phai di chung de can giua then con*/
+    display: none;
+    /* thang con nam giua chieu cao cua thang cha */
+    align-items: center;
+    /* nam giua chieu ngnang cua thang cha*/
+    justify-content: center;
+}
+.modal.open{
+    display: flex;
+}
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100%-32px);
+    position: relative;
+    /*  */
+    animation: modalFaceIn ease 0.7s;
+
+}
+.modal-header{
+    background-color: #009688;
+    height: 138px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.modal-heading-icon{
+    margin-right: 16px;
+}
+.modal-close{
+    position: absolute;
+    right: 0;
+    top:0;
+    padding: 12px;
+    color: #fff;
+}
+.modal-close:hover{
+    cursor: pointer;
+    color: #000;
+    background-color: silver;
+}
+.modal-body{
+    padding: 16px;
+}
+.modal-label {
+    display: block;
+    font-size: 16px;
+    margin: 15px 0;
+}
+.modal-input {
+        border: solid 1px #ccc;
+        width: 100%;
+        padding: 10px;
+        font-size: 15px;
+        margin-bottom: 24px;
+}
+#modal-buy-tickets {
+    width: 100%;
+    height: 50px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+    cursor: pointer;
+}
+#modal-buy-tickets:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+.modal-footer{
+    text-align: right;
+    margin: 15px ;
+}
+.modal-footer a{
+    color: #2196F3;
+}
+/* LA tao ra chuyen dong tinh thanh hoat hoa VD: chieu phim */
+@keyframes modalFaceIn {
+    from{
+        /* ----- */
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+/* Them elemet gia o cuoi,,,before o tren */
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
+}
+.col{
+    float:left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.section-heading{
+    text-align: center;
+}
+.section-sub-heading{
+    text-align: center;
+}
+.contact-content{
+    margin-top: 48px;
+}
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.4;
+}
+.contact-info i[class*="ti-"]{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form{
+    font-size: 15px;
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt16{
+    margin-top: 16px !important;
+
+}
+.contact-form .form-submit-btn{
+    font-size: 15px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    float: right;
+    cursor: pointer;
+    margin-top: 16px;
+    /* outline: duong ben ngoai */
+    
+}
+.contact-form .form-submit-btn:hover{
+    color: #000!important;
+    background-color: #ccc!important;
+}
+/* Map */
+.map-section img {
+    width: 100%;
+}
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .socials-list{
+    font-size: 24px;
+}
+#footer .socials-list a{
+    color:rgba(0, 0,0, 0.7);
+    text-decoration: none;
+   
+}
+#footer .socials-list a:hover{
+    color: rgba(0, 0,0, 0.5);
+}
+.copyright{
+    font-size: 15px;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+.copyright a{
+    color:rgba(0, 0,0, 0.7)
+}

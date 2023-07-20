@@ -1,0 +1,82 @@
+body{
+    background:url('../img/LoginBackgroundAnime/backgroundAnime.jpg');
+    background-size: cover;
+    background-position-y: -100px;
+    color: #fff !important;
+}
+#wapper{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#form-login{
+    max-width: 400px;
+    background: rgba(0,0, 0, 0.8);
+    flex-grow: 1;
+    padding: 50px 60px 80px;
+    box-shadow:0px 0px 17px 3px rgba(255, 255, 255, 0.8);
+}
+.form-heading{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.form-group{
+    border-bottom: 1px solid #fff;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    display: flex;
+}
+.form-input{
+    /* Màu trong suốt */
+    background: transparent;
+    border: 0;
+    /* Đường viền khi trỏ chuột vào*/
+    outline: 0;
+    padding-top: 10px;
+    color: #fff !important;
+    /* bang kich thuoc cua form-group*/
+    flex-grow: 1;
+}
+.form-input::placeholder{
+    color: #fff;
+}
+.form-submit{
+    background: transparent;
+    border: 3px solid #f5f5f5;
+    color: #fff;
+    width: 50%;
+    text-transform: uppercase;
+    padding: 6px 10px;
+    margin-top: 10px;
+    transition: 0.25s ease-in-out;
+}
+.form-submit:hover{
+    border: 3px solid #23c4a9;
+}
+.form-group i {
+    padding-top: 5px;
+    padding-right: 5px;
+}
+
+.form-register{
+	background: transparent;
+	border: 3px solid #f5f5f5;
+	color: #fff;
+	width: 50%;
+	text-transform: uppercase;
+	padding: 6px 55px;
+	margin-top: 10px;
+	transition:0.25s ease-in-out;
+	text-decoration: none;
+}
+
+.form-register:hover{
+	border:  3px solid #23c4a9;
+}
+#eye{
+    padding: 5px;
+}
